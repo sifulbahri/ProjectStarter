@@ -51,7 +51,10 @@ main {
     margin: 15px;
 }
 
-main div img {
+body main div img {
+    display: inline-block;
+}
+body main div {
     display: inline-block;
 }
 
