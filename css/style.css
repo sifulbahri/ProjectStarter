@@ -1,0 +1,55 @@
+body{
+    background-color: #2C727B;
+}
+
+header{
+    background-color: aliceblue;
+    padding: 15px;
+    margin: 15px;
+}
+
+header img{
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50px; /* Adjust the value to control the roundness */
+}
+
+header h1 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main img {
+  width: 250px;
+  height: 250px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+main {
+    background-color: aliceblue;
+    padding: 15px;
+    margin: 15px;
+}
+
+footer {
+    background-color: aliceblue;
+    padding: 15px;
+    margin: 15px;
+}
