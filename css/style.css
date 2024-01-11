@@ -49,6 +49,10 @@ main {
     margin: 15px;
 }
 
+main div {
+    display: inline-block;
+}
+
 footer {
     background-color: aliceblue;
     padding: 15px;
