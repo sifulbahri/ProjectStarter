@@ -9,9 +9,11 @@ header{
 }
 
 header img{
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 50px; /* Adjust the value to control the roundness */
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50px; /* Adjust the value to control the roundness */
+    height: 500px;
+    width: 500px;
 }
 
 header h1 {
