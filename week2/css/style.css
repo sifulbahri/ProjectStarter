@@ -1,0 +1,107 @@
+body{
+    background-color: #2C727B;
+}
+
+#skip-to-content {
+  color: black;
+}
+
+header{
+    background-color: aliceblue;
+    padding: 15px;
+    margin: 15px;
+}
+
+header img{
+  height: 500px;
+  width: 500px;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50px; /* Adjust the value to control the roundness */
+}
+
+header h1 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+main img {
+  width: 250px;
+  height: 250px;
+}
+
+nav {
+  display: inline-block;
+  width: 80%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav img {
+  width: 10%;
+  position: relative;
+  top: 20px;
+}
+
+
+body header img {
+  width: 10%;
+  position: relative;
+  top: 20px;
+}
+
+main {
+  background-color: aliceblue;
+  padding: 15px;
+  margin: 15px;
+}
+
+main div img {
+display: inline-block;
+}
+
+.grid {
+display: grid;
+grid-template-columns: 40% 40%;
+grid-gap: 15px;
+}
+
+.grid img {
+width: 100%;
+}
+
+.flex {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+row-gap: 15px;
+}
+
+.flex img {
+width: 30%;
+}
+
+footer {
+    background-color: aliceblue;
+    padding: 15px;
+    margin: 15px;
+}
