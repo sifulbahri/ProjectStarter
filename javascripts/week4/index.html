@@ -6,35 +6,27 @@
 	<link rel="stylesheet" href="css/gallery.css">
 	<script src = "js/gallery.js"></script>
 </head>
-<body onload="addTabindexAttributes()">
-	
-	<div id = "image" style="background-image: url('original-image-url');">
-		Hover over an image below to display here.
-	</div>
-	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
-	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
-	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
-    
-    <img class = "preview" src = "https://hips.hearstapps.com/hmg-prod/images/chow-chow-portrait-royalty-free-image-1652926953.jpg" alt = "Puppy 1" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
+<body>
 
-    <img class = "preview" src = "https://hips.hearstapps.com/hmg-prod/images/lonely-pug-royalty-free-image-1652974264.jpg" alt = "Puppy 2" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
 
-    <img class = "preview" src = "https://hips.hearstapps.com/ghk.h-cdn.co/assets/16/08/gettyimages-462376265.jpg" alt = "Puppy 3" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img class="preview" alt="Styling with a Bandana" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" 
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
 
-    <script>
-        function addTabindexAttributes() {
-            console.log("Page loaded. Adding tabindex attributes.");
+    <img class="preview" alt="With My Boy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" 
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
 
-            var images = document.querySelectorAll('img');
+    <img class="preview" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt="Young Puppy" 
+        onmouseover="upDate(this)" onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
 
-            for (var i = 0; i < images.length; i++) {
-                images[i].setAttribute('tabindex', i + 1);
-            }
-        }
-    </script>    
-    
+    <!-- New images from Freepik -->
+    <img class="preview" alt="Cute Cat" src="https://img.freepik.com/free-photo/beagles-puppies-yawning_1150-18201.jpg?w=740&t=st=1705993753~exp=1705994353~hmac=3c25f50b4867a1837fc13875349ee04e4fe88d2c0f920cbd99ea085d8be5019a" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
+
+    <img class="preview" alt="Beautiful Sunset" src="https://img.freepik.com/free-photo/dog-cute-group-beagle-puppy-sitting-panting_1150-18198.jpg?w=740&t=st=1705993927~exp=1705994527~hmac=1463b41d93737be61d7b09342f2a19d91657d1ba6f5b62bcef4819a7e9409d9b" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
+
+    <img class="preview" alt="Colorful Flowers" src="https://img.freepik.com/free-photo/five-dogo-argentino-puppies-blue-background_181624-57287.jpg?w=740&t=st=1705993953~exp=1705994553~hmac=bedce621c902733a2a72bf99dabba428d85d800d786f7bc64081d61430d70f7e" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
+
 </body>
 </html>

@@ -1,38 +1,52 @@
-/*Name this external file gallery.js*/
+        /*Name this external file gallery.js*/
 
-function upDate(previewPic) {
-    // Get the element with the id "image"
-    var imageDiv = document.getElementById('image');
-    
-    // Log information for debugging
-    console.log("Mouseover event triggered!");
-    console.log("Alt text of previewPic: " + previewPic.alt);
-    console.log("Source of previewPic: " + previewPic.src);
+        function upDate(previewPic) {
+            /* In this function you should 
+            1) Change the URL for the background image of the div with the id = "image" 
+            to the source file of the preview image
 
-    // Change the background image URL to the source file of the preview image
-    imageDiv.style.backgroundImage = "url('" + previewPic.src + "')";
-    
-    // Change the text of the div to the alt text of the preview image
-    imageDiv.innerHTML = previewPic.alt;
-}
+            2) Change the text  of the div with the id = "image" 
+            to the alt text of the preview image 
+            */
 
-function unDo() {
-    // Get the element with the id "image"
-    var imageDiv = document.getElementById('image');
-    
-    // Restore the original background image URL using CSS
-    imageDiv.style.backgroundImage = "url('original-image-url')";
-    
-    // Restore the original text using HTML
-    imageDiv.innerHTML = "Hover over an image below to display here.";
-}
+            var imageDiv = document.getElementById('image');
+            imageDiv.style.backgroundImage = 'url(' + previewPic.src + ')';
+            imageDiv.innerHTML = previewPic.alt;
+        }
 
-function addTabindexAttributes() {
-    console.log("Page loaded. Adding tabindex attributes.");
+        function unDo() {
+            /* In this function you should 
+            1) Update the URL for the background image of the div with the id = "image" 
+            back to the original image. You can use the CSS code to see what that original URL was
 
-    var images = document.querySelectorAll('img');
+            2) Change the text  of the div with the id = "image" 
+            back to the original text. You can use the HTML code to see what that original text was
+            */
 
-    for (var i = 0; i < images.length; i++) {
-        images[i].setAttribute('tabindex', i + 1);
-    }
-}
+            var imageDiv = document.getElementById('image');
+            imageDiv.style.backgroundImage = 'url("")';
+            imageDiv.innerHTML = 'Hover over an image below to display here.';
+        }
+
+        function onFocus(element) {
+            /* This function will be called when the image gains focus */
+            var imageDiv = document.getElementById('image');
+            imageDiv.innerHTML = 'Image is in focus';
+        }
+
+        function onBlur(element) {
+            /* This function will be called when the image loses focus */
+            var imageDiv = document.getElementById('image');
+            imageDiv.innerHTML = 'Hover over an image below to display here.';
+        }
+
+        function addTabIndex() {
+            /* This function adds tabindex attributes to all images */
+            var images = document.getElementsByClassName('preview');
+            for (var i = 0; i < images.length; i++) {
+                images[i].setAttribute('tabindex', i + 1);
+            }
+            console.log('Tabindex attributes added.');
+        }
+
+        window.onload = addTabIndex;
